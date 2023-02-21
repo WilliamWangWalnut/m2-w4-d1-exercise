@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+
+<script>
+    // array is [] and one dimensional. 
+var car = { 
+    type: 'Honda',      //Properties
+    model : 'Civic',    //Properties
+    price : '25000',    //Properties, This price here has '', so it's string. Numeric no need ''
+    // Below is called Method, method name is 'displayInfo'
+    displayInfo : function(){           
+        console.log(`${this.type} has many models but ${car.model} is $${car.price}`);  //template literals 
+        console.log(this.type + " has many models but " + this.model + " is $" + this.price); //concatenation
+    } // `` is above Tab key. Called backtick. 用this或者car都可以
+} 
+car.displayInfo();  
+
+</script>
+
+
+</body>
+</html>
